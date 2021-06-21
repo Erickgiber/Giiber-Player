@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.player {
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-gap: 20px;
+
+    margin-top: 55px;
+    transform: scale(1.1);
+
+    width: 100%;
+    height: 1fr;
+    user-select: none;
+    height: 30px;
+}
+
+.volumen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-gap: 10px;
+    color: #4664FA;
+}
+
+.volumen {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input#volumeslider {
+    width: 120px;
+    height: 6px;
+    border: 1px solid #4664FA;
+    outline: none;
+    border-radius: 5px;
+}
+
+/*
+input#seekslider {
+    width: 100px;
+    outline: none;
+    border:
+}
+*/
+
+/* Skin Default GiiberJs */
+/* Editable Skin */
+#volumeslider,
+#seekslider {
+    -webkit-appearance: none !important;
+    background: transparent;
+    height: 7px;
+    border-radius: 0px;
+    padding: 5px;
+}
+
+/* Circle of the Skin */
+#seekslider::-webkit-slider-thumb,
+#volumeslider::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #4664FA;
+    height: 5px;
+    width: 5px;
+    border-radius: 0px;
+}
+
+/*
+#seekslider {
+    width: 150px !important;
+    background-color: transparent;
+    border: 3px solid #4664FA;
+}
+*/
+
+#playpausebtn {
+    margin-top: 5px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#playpausebtn i {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#playpausebtn i:hover {
+    color: #959595;
+}
+
+#pause {
+	display: none;
+}
+
+#play {
+	color: blue;
+}
+
+#mutebtn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+    color: #ffffff;
+
+    font-family: arial;
+
+    width: 50px;
+    height: 100%;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+#tirbox {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    color: #fff;
+    margin: 0 5px;
+    font-family: Arial;
+}
+
+/* disable
+#change {
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    color: #ffffff;
+    margin: 5px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    cursor: pointer;
+}
+*/

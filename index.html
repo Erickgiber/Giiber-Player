@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<link rel="stylesheet" href="./src/css/audio.css">
+	<link rel="stylesheet" href="./src/css/app.css">
+	<title> Giiber Player </title>
+</head>
+<body>
+
+	<!-- Input para la musica -->
+	<input id="upload" type="file" accept="audio/mpeg3">
+
+
+<main id="movil">
+	<!-- Cabezera -->
+	<div class="header">
+		<span id="es"> ES </span> <div class="menubar"></div>
+	</div>
+
+	<!-- Titulo -->
+	<div class="title">
+		<h1> Giiber Player </h1>
+	</div>
+
+	<!-- Imagen -->
+	<div class="image">
+		<div class="imageCover"></div>
+	</div>
+
+	<!-- Nombre del arista -->
+	<div class="info">
+		<div class="names">
+			<span class="name">  </span>
+			<span class="nameMusic">  </span>
+		</div>
+
+		<div class="favorite">
+			<i class="far fa-heart"></i>
+		</div>
+	</div>
+
+<!-- Controls -->
+<div class="player">
+   <div class="volumen">
+   		<i class="fal fa-volume-up"></i>
+   	 	<input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+   </div>
+
+   <div id="playpausebtn">
+   		<i id="back" class="far fa-arrow-to-left"></i>
+    	<i id="play" class="fal fa-play"></i>
+    	<i id="pause" class="fal fa-pause"></i>
+    	<i id="next" class="far fa-arrow-to-right"></i>
+    </div>
+
+    <div id="tirbox">
+        <!-- Time Box -->
+        <span>Duración:</span>
+        <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+    </div>
+</div>
+
+<div class="options">
+		<label for="upload" class="upload">
+			<i class="fal fa-upload"></i>
+		</label>
+
+		<div class="loop">
+			<i class="far fa-redo"></i>
+		</div>
+	</div>
+
+
+<!-- Boton de mute -->
+	<!-- Mute Button -->
+		<!-- <div id="mutebtn"> Mute </div> -->
+
+</main>
+
+
+	<script src="./src/js/Gbody.js"></script>
+	<script src="./src/js/audio.js"></script>
+	<script src="./src/js/app.js"></script>
+</body>
+</html>

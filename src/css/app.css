@@ -1,0 +1,194 @@
+/* font-family: 'Rock Salt', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+/* font-family: 'Rokkitt', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+
+:root {
+	--img: url();
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101010;
+    color: #fff;
+}
+
+#movil {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 700px;
+    border-radius: 25px;
+    border: 5px solid #000;
+    box-shadow: 0 3px 15px 0 #0009;
+
+    /* Background */
+    background: rgb(19, 19, 19);
+    background: -moz-linear-gradient(0deg, rgba(19, 19, 19, 1) 51%, rgba(0, 22, 77, 1) 86%, rgba(0, 26, 93, 1) 95%);
+    background: -webkit-linear-gradient(0deg, rgba(19, 19, 19, 1) 51%, rgba(0, 22, 77, 1) 86%, rgba(0, 26, 93, 1) 95%);
+    background: linear-gradient(0deg, rgba(19, 19, 19, 1) 51%, rgba(0, 22, 77, 1) 86%, rgba(0, 26, 93, 1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#131313", endColorstr="#001a5d", GradientType=1);
+}
+
+/* Cabezera */
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 15px;
+	font-family: Arial;
+	position: relative;
+}
+
+/* - Forma del noch - */
+.header::after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 160px;
+	height: 32px;
+	background-color: #000;
+	border-radius: 0 0 15px 15px;
+	z-index: 1;
+}
+/* camera */
+.header::before {
+	content: "";
+	position: absolute;
+	top: 5.5px;
+	left: 67%;
+	transform: translateX(-50%);
+	width: 15px;
+	height: 15px;
+	border-radius: 20px;
+	background-color: #ededed;
+	border: 3px solid #fff;
+	z-index: 2;
+}
+
+/* Es */
+#es {
+	font-size: 25px;
+	user-select: none;
+}
+
+/* menubar */
+.menubar {
+	background-image: url(../media/icons/menubar.png);
+	background-position: center;
+	background-size: cover;
+
+	width: 50px;
+	height: 52px;
+}
+
+
+/* titulo Giiber Player */
+.title {
+	padding: 3px 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Rock Salt', cursive;
+	user-select: none;
+	font-weight: lighter;
+}
+
+/* Imagen */
+.image {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 1fr;
+	margin-top: 5px;
+}
+
+.imageCover {
+	background-image: var(--img);
+	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.3); 
+	border-radius: 30px;
+	width: 85%;
+	height: 250px;
+
+	/* background config */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 0.5s;
+}
+
+.name,
+.nameMusic {
+	font-family: 'Rokkitt', serif;
+	font-size: 30px;
+}
+
+.info {
+	width: 100%;
+	padding: 20px 40px;
+
+	/* flex */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.names {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 1fr;
+}
+
+.favorite {
+	font-size: 40px;
+	color: #505050;
+}
+
+/* options footer */
+.options {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 55px;
+	/* flex */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7px 50px;
+}
+
+.upload {
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.loop {
+	color: #ededed;
+	font-size: 30px;
+	transform: rotateY(180deg) rotate(-45deg);
+	text-shadow: 4px 4px 0 #0018FF;
+	display: none;
+}
+
+/*  Input escondido */
+#upload[type="file"] {
+	display: none;
+}
+
+.fa-upload {
+	display:  none;
+}
